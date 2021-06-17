@@ -2,9 +2,9 @@ import React from 'react';
 
 import './home-page.styles.css';
 
-import Directory from './components/directory/directory.component'
+import Directory from '../../components/directory/directory.component'
 
-const HomePage = () => {
+const HomePage = (props) => {
     return(
 
     <div className='homepage'>

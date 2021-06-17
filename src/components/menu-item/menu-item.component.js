@@ -1,24 +1,32 @@
 import React from 'react';
 
 const MenuItem = ({title,imageUrl,size}) => {
-    <div className='menu=item'>
 
-        <div
-        classname='background-image'
-        style={{
+return(
 
-        }}
-        >
+<div className='${size} menu=item'>
 
-        </div>
+<div
+classname='background-image'
+style={{
+    backgroundImage:`url(${imageUrl})`
+}}
+>
+
+</div>
 
 
-        <div className="content">
-        <h1 className="title"></h1>
+<div className="content">
+<h1 className="title">{title.toUpperCase()}</h1>
 
-        </div>
+</div>
 
-    </div>  
+</div>  
+
+    
+)
+    
 }
+
 
 export default MenuItem;
