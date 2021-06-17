@@ -7,7 +7,7 @@ return(
 
 <div 
 className={'${size} menu=item'}
-onClick={()=>history.pushState({r:10},`${match.url}${linkUrl}`)}
+onClick={()=>history.push(`${match.url}${linkUrl}`)}
 >
 
 <div
