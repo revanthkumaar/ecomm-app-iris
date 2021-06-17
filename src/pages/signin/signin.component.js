@@ -1,10 +1,25 @@
-const Signin = () => {
-    return(
-        <div>
-        <p>signin page</p>
-    </div>
-    )
-  
+import React from "react";
+import PropTypes from "prop-types";
+import { withRouter } from "react-router";
+
+// A simple component that shows the pathname of the current location
+class ShowTheLocation extends React.Component {
+  static propTypes = {
+    match: PropTypes.object.isRequired,
+    location: PropTypes.object.isRequired,
+    history: PropTypes.object.isRequired
+  };
+
+  //this.state = {loading:true}
+
+ 
+  render() {
+    const { match, location, history } = this.props;
+    console.log(this.props)
+    return <div>You are now at {location.pathname}</div>;
+  }
 }
 
-export default Signin
+// Create a new component that is "connected" (to borrow redux
+// terminology) to the router.
+export default withRouter(ShowTheLocation);

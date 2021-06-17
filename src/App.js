@@ -11,10 +11,7 @@ function App() {
     <Switch>
       <Route exact path='/' component={HomePage}/>
       <Route path='/signin' component={Signin}/>
-      
     </Switch>
-     
-
     </div>
   );
 }
