@@ -1,19 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
-import {Switch,Route} from 'react-router-dom';
-import Signin from './pages/signin/signin.component'
+import React from 'react';
+import { Switch, Route } from 'react-router-dom';
 
-import HomePage from './pages/home-page/home-page.component'
-import ShopPage from './pages/home-page/home-page.component'
+import './App.css';
+
+import HomePage from './pages/homepage/homepage.component';
+import ShopPage from './pages/shop/shop.component';
+import SignInAndSignUpPage from './pages/sign-in-and-sign-up/sign-in-and-sign-up.component';
+import Header from './components/header/header.component';
 
 function App() {
   return (
-    <div className="App">
-    <Switch>
-      <Route exact path='/' component={HomePage}/>
-      <Route path='/shop' component={ShopPage}/>
-      <Route path='/signin' component={Signin}/>
-    </Switch>
+    <div>
+      <Header />
+      <Switch>
+        <Route exact path='/' component={HomePage} />
+        <Route path='/shop' component={ShopPage} />
+        <Route path='/signin' component={SignInAndSignUpPage} />
+      </Switch>
     </div>
   );
 }
