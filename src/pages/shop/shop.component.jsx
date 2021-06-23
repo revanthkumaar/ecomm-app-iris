@@ -1,16 +1,21 @@
 import React from 'react';
+import CollectionsOverview from '../../components/collections-overview/collections-overview.component';
+ 
 
 class ShopPage extends React.Component {
   constructor(props) {
     super(props);
    
+     this.state = {
+       loading:false
+     }
   }
 
   render() {
-    const { collections } = this.state;
+ 
     return (
       <div className='shop-page'>
-      
+      <CollectionsOverview/>
       </div>
     );
   }
