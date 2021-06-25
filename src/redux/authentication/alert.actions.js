@@ -1,5 +1,5 @@
 //action constants
-import {alertConstants} from './authActionConstants'
+import {alertConstants} from './alertActionConstants'
 
 //define action creators
 export const alertActions = {
