@@ -9,6 +9,8 @@ class ShopPage extends React.Component {
      this.state = {
        loading:false
      }
+
+    
   }
 
   render() {
