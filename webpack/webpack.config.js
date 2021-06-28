@@ -36,7 +36,7 @@ module.exports = {
     filename: 'bundle.js',
   },
   plugins: [
-    new HtmlWebpackPlugin({
+    new HtmlWebpackPlugin({ //inject bundle.js file in to index.html file
       template: path.resolve(__dirname, '..', './src/index.html'),
     }),
   ],
